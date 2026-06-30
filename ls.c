@@ -10,5 +10,9 @@ int main (int argc, char *argv[]) {
      return 1;   
     }
 
+    struct dirent *entry; 
+    entry = readdir(dir); 
+    printf("%s\n", entry->d_name);
+    
     return 0; 
 }
