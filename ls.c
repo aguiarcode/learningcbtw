@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main (int argc, char *argv[]) { 
-    printf("%s \n", argv[1]); 
+    const char *path = (argc > 1) ? argv[1] : ".";
+    printf("%s \n", path); 
     return 0; 
 }
